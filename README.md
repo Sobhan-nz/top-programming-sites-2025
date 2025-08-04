@@ -45,9 +45,9 @@ FreeCodeCamp, The Odin Project, Codecademy, W3Schools, Scrimba, Sololearn, Udemy
 
 ---
 
-## تصویر پروژه
+## دمو پروژه
 
-![نمونه نمایش پروژه](https://user-images.githubusercontent.com/yourusername/yourproject/screenshot.png)
+![نمایش پروژه](https://sobhan-nz.github.io/top-programming-sites-2025/)
 
 ---
 ### سپاس از همراهی شما!  
