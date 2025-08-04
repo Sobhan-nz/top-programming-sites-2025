@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بهترین سایت‌های آموزش برنامه‌نویسی ۲۰۲۵</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Vazirmatn', sans-serif;
+            background: linear-gradient(135deg, #f0f4ff, #e0f7fa);
+            color: #333;
+        }
+
+        header {
+            background-color: #0d47a1;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            max-width: 64px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #0d47a1;
+        }
+
+        .tags {
+            margin: 1rem 0;
+        }
+
+        .tags span {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+            padding: 0.3rem 0.6rem;
+            border-radius: 0.5rem;
+            margin-left: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        .rating {
+            color: #ff9800;
+            font-weight: bold;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 1rem;
+            background-color: #0d47a1;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .card a:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>بهترین سایت‌های آموزش برنامه‌نویسی در سال ۲۰۲۵</h1>
+    </header>
+
+    <section class="container">
+        <!-- کارت‌ها -->
+        <!-- سایت‌های برنامه‌نویسی -->
+        <script>
+            const sites = [
+                {
+                    name: "FreeCodeCamp",
+                    img: "https://www.freecodecamp.org/news/content/images/2022/07/fcc_primary_large.png",
+                    desc: "آموزش رایگان و پروژه‌محور برای یادگیری برنامه‌نویسی از صفر تا پیشرفته.",
+                    tags: ["#رایگان", "#پروژه‌محور", "#وب"],
+                    rating: "4.8",
+                    link: "https://www.freecodecamp.org"
+                },
+                {
+                    name: "The Odin Project",
+                    img: "https://www.theodinproject.com/assets/logo-423d09f8e917ae53785c3f55fc62ccf2e25f0f39b61ab1a1a118bc4db89c4a29.svg",
+                    desc: "منبع جامع یادگیری فول‌استک توسعه وب به صورت رایگان.",
+                    tags: ["#فول‌استک", "#رایگان", "#آموزش‌عملی"],
+                    rating: "4.7",
+                    link: "https://www.theodinproject.com"
+                },
+                {
+                    name: "Codecademy",
+                    img: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Codecademy_logo.png",
+                    desc: "آموزش تعاملی برای زبان‌های مختلف برنامه‌نویسی از مبتدی تا پیشرفته.",
+                    tags: ["#تعاملی", "#پولی/رایگان", "#شروع‌آسان"],
+                    rating: "4.5",
+                    link: "https://www.codecademy.com"
+                },
+                {
+                    name: "W3Schools",
+                    img: "https://www.w3schools.com/images/w3schools_logo_436_2.png",
+                    desc: "آموزش ساده، ساخت‌یافته و قابل فهم برای HTML, CSS و JavaScript.",
+                    tags: ["#مبتدی", "#وب", "#تمرین"],
+                    rating: "4.3",
+                    link: "https://www.w3schools.com"
+                },
+                {
+                    name: "Scrimba",
+                    img: "https://scrimba.com/static/art/logo.png",
+                    desc: "آموزش تعاملی با ویدیوهایی که می‌توان داخل‌شان کد نوشت.",
+                    tags: ["#ویدیو", "#تعاملی", "#فرانت‌اند"],
+                    rating: "4.6",
+                    link: "https://scrimba.com"
+                },
+                {
+                    name: "Sololearn",
+                    img: "https://www.sololearn.com/Images/BrandAssets/Sololearn_Logo_Primary.png",
+                    desc: "اپلیکیشن موبایلی برای یادگیری زبان‌های برنامه‌نویسی با تمرینات کوتاه.",
+                    tags: ["#موبایل", "#شروع-ساده", "#زبان‌متنوع"],
+                    rating: "4.4",
+                    link: "https://www.sololearn.com"
+                },
+                {
+                    name: "Udemy",
+                    img: "https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg",
+                    desc: "هزاران دوره آموزش برنامه‌نویسی با کیفیت بالا و قیمت مناسب.",
+                    tags: ["#پولی", "#دوره", "#مبتدی-تا-پیشرفته"],
+                    rating: "4.5",
+                    link: "https://www.udemy.com"
+                },
+                {
+                    name: "Coursera",
+                    img: "https://about.coursera.org/static/whiteCourseraLogo-aad66c28d1ba9e2a77c4f9b1a6812276.svg",
+                    desc: "دوره‌های آکادمیک از دانشگاه‌های معتبر برای یادگیری برنامه‌نویسی.",
+                    tags: ["#دانشگاهی", "#معتبر", "#پروژه-محور"],
+                    rating: "4.6",
+                    link: "https://www.coursera.org"
+                },
+                {
+                    name: "edX",
+                    img: "https://upload.wikimedia.org/wikipedia/commons/3/3e/EdX.svg",
+                    desc: "منبع یادگیری برنامه‌نویسی با دوره‌هایی از MIT و Harvard.",
+                    tags: ["#آکادمیک", "#رایگان", "#پیشرفته"],
+                    rating: "4.6",
+                    link: "https://www.edx.org"
+                },
+                {
+                    name: "Khan Academy",
+                    img: "https://cdn.kastatic.org/images/khan-logo-dark-background.new.png",
+                    desc: "آموزش پایه‌ای برنامه‌نویسی برای نوجوانان و مبتدی‌ها.",
+                    tags: ["#آموزش-پایه", "#رایگان", "#مبتدی"],
+                    rating: "4.4",
+                    link: "https://www.khanacademy.org"
+                },
+                // ادامه سایت‌ها
+                {
+                    name: "GeeksforGeeks",
+                    img: "https://media.geeksforgeeks.org/gfg-gg-logo.svg",
+                    desc: "منبعی عالی برای آموزش ساختار داده، الگوریتم و تمرین‌های کدنویسی.",
+                    tags: ["#الگوریتم", "#تمرین", "#مقالات"],
+                    rating: "4.5",
+                    link: "https://www.geeksforgeeks.org"
+                },
+                {
+                    name: "Hackerrank",
+                    img: "https://hrcdn.net/fcore/assets/work/header/hackerrank_logo-21e2867566.svg",
+                    desc: "تمرین مهارت‌های برنامه‌نویسی و حل مسئله با چالش‌های واقعی.",
+                    tags: ["#تمرین", "#چالش", "#حل-مسئله"],
+                    rating: "4.6",
+                    link: "https://www.hackerrank.com"
+                },
+                {
+                    name: "LeetCode",
+                    img: "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png",
+                    desc: "آماده‌سازی برای مصاحبه‌های فنی شرکت‌های بزرگ با تمرین‌های چالش‌برانگیز.",
+                    tags: ["#مصاحبه", "#چالش", "#تمرین"],
+                    rating: "4.8",
+                    link: "https://leetcode.com"
+                },
+                {
+                    name: "Codeforces",
+                    img: "https://sta.codeforces.com/s/72298/images/codeforces-sponsored-by-ton.png",
+                    desc: "پلتفرم رقابتی برنامه‌نویسی برای علاقه‌مندان به الگوریتم و مسابقات.",
+                    tags: ["#رقابتی", "#الگوریتم", "#مسابقه"],
+                    rating: "4.4",
+                    link: "https://codeforces.com"
+                },
+                {
+                    name: "CS50",
+                    img: "https://cs50.harvard.edu/x/2023/images/logo-cs50.png",
+                    desc: "دوره معروف برنامه‌نویسی دانشگاه هاروارد برای شروع حرفه‌ای.",
+                    tags: ["#هاروارد", "#پایه", "#آکادمیک"],
+                    rating: "4.9",
+                    link: "https://cs50.harvard.edu"
+                },
+                {
+                    name: "Frontend Mentor",
+                    img: "https://www.frontendmentor.io/static/images/logo-desktop.svg",
+                    desc: "حل چالش‌های رابط کاربری واقعی برای یادگیری فرانت‌اند.",
+                    tags: ["#چالش", "#فرانت‌اند", "#تمرین"],
+                    rating: "4.6",
+                    link: "https://www.frontendmentor.io"
+                },
+                {
+                    name: "Exercism",
+                    img: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Exercism.io_logo.svg",
+                    desc: "تمرین زبان‌های مختلف برنامه‌نویسی با راهنمایی مربی.",
+                    tags: ["#تمرین", "#زبان‌متنوع", "#راهنما"],
+                    rating: "4.5",
+                    link: "https://exercism.org"
+                },
+                {
+                    name: "Pluralsight",
+                    img: "https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-base/resources/images/logos/pluralsight-white.png",
+                    desc: "آموزش تخصصی برنامه‌نویسی و تکنولوژی برای حرفه‌ای‌ها.",
+                    tags: ["#پیشرفته", "#پولی", "#متخصص"],
+                    rating: "4.4",
+                    link: "https://www.pluralsight.com"
+                },
+                {
+                    name: "Google Developers",
+                    img: "https://developers.google.com/site-assets/images/home/developers-social-media.png",
+                    desc: "مستندات و ابزارهای توسعه‌دهنده ارائه‌شده توسط گوگل.",
+                    tags: ["#مستندات", "#ابزار", "#پیشرفته"],
+                    rating: "4.7",
+                    link: "https://developers.google.com"
+                },
+                {
+                    name: "MDN Web Docs",
+                    img: "https://developer.mozilla.org/mdn-social-share.0ca9dbda.png",
+                    desc: "مستندات دقیق و حرفه‌ای برای توسعه وب از سوی موزیلا.",
+                    tags: ["#مستندات", "#فرانت‌اند", "#پشتیبان"],
+                    rating: "4.9",
+                    link: "https://developer.mozilla.org"
+                }
+                // پایان لیست ۲۰ سایت
+            ];
+
+            const container = document.querySelector('.container');
+
+            sites.forEach(site => {
+                const card = document.createElement('div');
+                card.className = 'card';
+
+                card.innerHTML = `
+          <img src="${site.img}" alt="${site.name}" />
+          <h3>${site.name}</h3>
+          <p>${site.desc}</p>
+          <div class="tags">
+            ${site.tags.map(tag => `<span>${tag}</span>`).join('')}
+          </div>
+          <div class="rating">⭐ ${site.rating} / 5</div>
+          <a href="${site.link}" target="_blank">مشاهده سایت</a>
+        `;
+
+                container.appendChild(card);
+            });
+        </script>
+    </section>
+</body>
+
+</html>
